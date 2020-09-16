@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Metadatos para ayudar en el SEO (Search Engine Optimization) -->
+    
+    <meta content="Este es un sitio de pruebas" name="descripcion">
+    <meta content="dev.f, master en coding, etc" name="keywords">
+    <meta content="https://datahome.mx/datahome_web/static/images/logos/logo-nav.png" name="image" />
+    <meta content="es-MX" http-equiv="Content-Language" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form aria-label="Pequeño formulario, demostrativo de inputs">
+        <label class="descripcion" for="Nombre">Ingresa tu nombre</label>
+        <input class="entrada" type="text" name="Nombre" placeholder="Nombre" required />
+
+        <label class="descripcion" for="Numero">Dame un numero</label>
+        <input class="entrada" type="number" name="Numero">
+    
+        <label class="descripcion" for="Telefono">Dame tu teléfono</label>
+        <input class="entrada" type="tel" name="Telefono" autocomplete="off">
+    
+        <label class="descripcion" for="Email">Dame tu correo</label>
+        <input class="entrada" type="email" name="Email"/>
+
+        <input class="entrada" type="range" max="10" min="0"/>
+
+        <label class="descripcion" for="color">Elige un color</label>
+        <input class="entrada" type="color" max="10" min="0"/>
+
+        <input class="entrada" type="range" max="10" min="0"/>
+
+
+        
+        <input class="entrada" type="date" name="" id="">
+
+        <label for="Azul">Azul</label>
+        <input type="checkbox" name="azul"/>
+
+        <label for="Verde">Verde</label>
+        <input type="checkbox" name="verde"/>
+
+        <label for="Amarillo">Amarillo</label>
+        <input type="checkbox" name="amarillo"/>
+
+        <label for="Mazda">Mazda</label>
+        <input type="radio" name="Autos" value="Mazda"/>
+
+        <label for="VW">VW</label>
+        <input type="radio" name="Autos" value="VW"/>
+
+        <label for="Sentra">Sentra</label>
+        <input type="radio" name="Autos" value="Sentra"/>
+
+        <label class="descripcion" for="">Coloca una historia</label>
+        <textarea class="entrada "name="Historia" id="" cols="30" rows="10"></textarea>
+
+
+        <input type="submit" name="Enviar" value ="Enviar a mi base de datos imaginaria"/> <!-- para formas -->
+
+
+        <button class="entrada" >Boton de Envío</button> <!-- para formas -->
+    
+    </form>
+    
+</body>
+</html>

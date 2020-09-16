@@ -1,0 +1,24 @@
+.caja {
+    background-color: royalblue;
+    height: 100%;
+    display: inline;
+
+}
+.rojo {
+    color: red;
+
+}
+
+body {
+    margin: 0;
+
+}
+
+.box_model {
+    border: 10px solid green;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+
+}

@@ -1,0 +1,49 @@
+hmtl, body {/* selector de Etiqueta */
+    margin: 0;
+    height: 100%;
+}
+main {
+    background: url(img/polygon2square.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    *background-size: cover;
+}
+
+.navbar {
+    height: 80px;
+    background-color: salmon;
+}
+.logo {
+    height: 200px;
+    background-color: blue;
+}
+.search {
+    height: 200px;
+    background-color: red;
+}
+.links {
+    height: 200px;
+    background-color: skyblue;
+}
+.links-first-row {
+    height: 50%;
+    width: 500px;
+    margin: 0 auto;
+    background-color: steelblue;
+}
+.loguito {
+    height: 100%;
+    width: 24%;
+    display: inline-block;
+    background-color: violet;
+}
+.loguito-imagen {
+    background-color: yellow;
+    height: 75%;
+}
+.loguito-texto {
+    height: 25%;
+    background-color: tomato;
+
+}

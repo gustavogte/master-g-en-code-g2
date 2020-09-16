@@ -1,0 +1,16 @@
+/* TODAS LAS ETIQUETAS PRESENTES */
+* {
+    font-family: Arial;
+}
+
+.descripcion {
+    display: block;
+}
+
+.entrada {
+    display: block;
+    margin-bottom: 10px;
+    width: 566px;
+    height: 44;
+    box-sizing: 300px; 
+}

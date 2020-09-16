@@ -1,0 +1,23 @@
+.contenedor {
+   height: 800px;
+   width: 800px;
+   background-color: purple;
+   display: flex;
+   /* flex-direction: row;
+   flex-wrap: wrap; */
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+   align-items: stretch;
+}
+.hijo {
+   height: 150px;
+   width: 150px;
+   background-color: orange;
+   border: 1px solid black;
+   /* para centrar los números en los items (hijos) */
+   color: white;
+   font-family: Arial;
+   display: flex;
+   justify-content: center;  
+   align-items: center;
+}
