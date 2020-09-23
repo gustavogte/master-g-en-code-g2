@@ -31,8 +31,11 @@ class LinkedList{
     this.head = null;
     this.lenght = 0;
   }
+  isEmpty() {
+    return this.head === null;
+  }
   // estos son los métodos o comportamientos de mi lista
-  add(data) {
+  addAtEnd(data) {
     console.log("add " + data);
     const node = new Node(data); // {data: data, next: null }
     if(this.head === null) {
@@ -46,25 +49,55 @@ class LinkedList{
       // cuando next sea nulo, entonces sale del while y continua con el resto del código
       currentNode.next = node;
     }
-    
+
     this.lenght++;
     console.log("---------------------");
+  }
+  get(index) {
+      // 0, indice mayor
+      if(head === null || index > this.lenght) {
+        return null;
+      } else {
+        // 1 -> 2 -> 3
+        let counter = 1;
+        let currentNode = this.head;
+        while( counter !== index) {
+          counter++;
+          currentNode = currentNode.next;
+        }
+        return currentNode;
+      }
+
+  }
+  delete(data) {
+      let currentNode = this.head;
+      let previousNode = null;
+      if (currentNode.data === data) {
+        this.head = this.head.next;
+      } else {
+        while (currentNode.data !== data && currentNode !== null) {
+          previousNode = currentNode;
+          currentNode = currentNode.next;
+        }
+        previousNode = currentNode.next;
+        this.lenght--;
+        }
+
+  }
+  addAtStart() { // tarea 
+
   }
 }
 
 const listaDeAlumnos = new LinkedList();
 
-listaDeAlumnos.add('Cesar');
+listaDeAlumnos.addAtEnd('Cesar');
 
-listaDeAlumnos.add('Juan Camilo');
-listaDeAlumnos.add('Marlon');
-listaDeAlumnos.add('Ulma');
-listaDeAlumnos.add('Margarito');
+listaDeAlumnos.addAtEnd('Juan Camilo');
+listaDeAlumnos.addAtEnd('Marlon');
+listaDeAlumnos.addAtEnd('Ulma');
+listaDeAlumnos.addAtEnd('Margarito');
 
 
 console.log(listaDeAlumnos);
-
-
-
-
 
