@@ -39,6 +39,8 @@ class LinkedList{
   }
 }
 
+const litaDeAlumnos = new LinkedList:();
+
 
 
 
