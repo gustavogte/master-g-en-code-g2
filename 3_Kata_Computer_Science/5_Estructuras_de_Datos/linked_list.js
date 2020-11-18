@@ -5,7 +5,11 @@
 // El tamaño de la lista (lenght)
 // Las listas tienen dos comportamientos esenciales:
 // insertar (add)
-// borrar (delete)
+// - al principio
+// - al final
+// - en medio
+// borrar (valor)
+// busqueda o obtener (indice)
 
 
 /*
@@ -84,10 +88,56 @@ class LinkedList{
         }
 
   }
-  addAtStart() { // tarea 
+  // TODO: addAtStart: implementación
+  addAtStart(data) {
+    // Hay que crear un nuevo nodo
+    const node = new Node(data);
+    // verificar si la lista esta vacía
+    // this.head === null; -> falsy -> this.head -< false
+    // !false == true
+    // (this.head === null) true
+    // (this.head !== null) false
+    if(!this.head) {
+      this.head = node;
+    } else {
+        node.next = this.head;
+        this.head = node;
+    }
+    this.lenght++;
+  }
+  get(index) {
+      // 0, indice mayor
+      if(head === null || index > this.lenght) {
+        return null;
+      } else {
+        // 1 -> 2 -> 3
+        let counter = 1;
+        let currentNode = this.head;
+        while( counter !== index) {
+          counter++;
+          currentNode = currentNode.next;
+        }
+        return currentNode;
+      }
 
   }
-}
+  delete(data) {
+      let currentNode = this.head;
+      let previousNode = null;
+      if (currentNode.data === data) {
+        this.head = this.head.next;
+      } else {
+        while (currentNode.data !== data && currentNode !== null) {
+          previousNode = currentNode;
+          currentNode = currentNode.next;
+        }
+        previousNode = currentNode.next;
+        this.lenght--;
+      }
+
+  }
+  }
+
 
 const listaDeAlumnos = new LinkedList();
 
@@ -97,6 +147,7 @@ listaDeAlumnos.addAtEnd('Juan Camilo');
 listaDeAlumnos.addAtEnd('Marlon');
 listaDeAlumnos.addAtEnd('Ulma');
 listaDeAlumnos.addAtEnd('Margarito');
+listaDeAlumnos.addAtStart('Gustavo');
 
 
 console.log(listaDeAlumnos);
