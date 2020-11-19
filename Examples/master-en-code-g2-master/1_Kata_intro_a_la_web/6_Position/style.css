@@ -1,0 +1,37 @@
+.navbar {
+  /*position:fixed*/
+  /*position:sticky*/
+  position: static;
+  background-color: thistle;
+  width: 100%;
+  border-radius: 10px;
+  top: 0px;
+  left: 0px;
+}
+
+.presentacion {
+  height: 2000px;
+}
+
+.caja {
+  background-color: thistle;
+  width: 100px;
+  height: 100px;
+}
+.absoluta {
+  z-index: 0;
+  width: 120px;
+  background-color: tomato;
+  position: absolute;
+}
+.relativa {
+  z-index: 1;
+  position: relative;
+}
+.sticky {
+  right: 0px;
+  position: sticky;
+}
+.fixed {
+  position: fixed;
+}

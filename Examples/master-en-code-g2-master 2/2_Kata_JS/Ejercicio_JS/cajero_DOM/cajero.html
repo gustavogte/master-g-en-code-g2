@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cajero DevF</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="account-data">
+        <h1 class="title">Bienvenido a tu Cajero DevF</h1>
+        <div class="account-name">
+          <label>Nombre:</label
+          ><input type="text" class="nombre-cuenta" id="fname" />
+        </div>
+        <div class="account-password">
+          <label>Password:</label
+          ><input type="text" class="contrasena-cuenta" id="contrasena" />
+          <div class="account-verification">
+            <button
+              class="btn-verification"
+              id="verification"
+              onclick="getVerified()"
+            >
+              <p class="p-btn-ver">Verification</p>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="opperation-info">
+        <div class="account-balance">
+          <button class="btn-balance" id="balance" onclick="getBalance()">
+            Saldo
+          </button>
+        </div>
+        <div class="account-entry">
+          <button class="btn-entry" id="entry" onclick="printInput()">
+            Ingresar Monto
+          </button>
+          <input
+            type="hidden"
+            class="ingresar-monto"
+            id="input-entry"
+            onchange="getEntry()"
+          />
+        </div>
+        <div class="account-withdraw">
+          <button class="btn-withdraw" id="withdraw" onclick="printInput2()">
+            Retirar Monto
+          </button>
+          <input
+            type="hidden"
+            class="retirar-monto"
+            id="input-withdraw"
+            onchange="getWithdraw()"
+          />
+        </div>
+      </section>
+      <section class="refresh">
+        <div class="div-refresh">
+          <button class="btn-refresh" id="btn-refresh" onclick="refreshPage()">
+            Refrescar
+          </button>
+        </div>
+        <div class="div-create-account">
+          <button
+            class="btn-create-acc"
+            id="btn-create-account"
+            onclick="printInput3()"
+          >
+            Crear Cuenta
+          </button>
+          <input
+            placeholder="nombre"
+            type="hidden"
+            class="enter-name"
+            id="account-name"
+            onchange="createAccount()"
+          />
+          <input
+            placeholder="contrasena"
+            type="hidden"
+            class="enter-pwd"
+            id="account-password"
+            onchange="createAccount()"
+          />
+          <input
+            placeholder="saldo"
+            type="hidden"
+            class="enter-balance"
+            id="account-balance"
+            onchange="createAccount()"
+          />
+          <button
+            type="hidden"
+            class="btn-crear"
+            id="created"
+            onclick="createAccount()"
+          >
+            Crear
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="cajero.js"></script>
+  </body>
+</html>

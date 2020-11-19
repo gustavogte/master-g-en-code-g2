@@ -1,0 +1,74 @@
+body {
+  background-color: slategray;
+}
+.titulo {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  animation-name: titulo;
+  animation-duration: 2s;
+}
+@keyframes titulo {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+.img-yeti {
+  border-radius: 10px;
+  border: silver 2px solid;
+  width: 600px;
+  animation-name: yeti;
+  /* animation-delay: 2s; */
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  background-image: url("./assets/yetimonstersinc.png");
+  background-position: center;
+  background-size: cover;
+}
+@keyframes yeti {
+  0% {
+    transform: translateX(-1000px);
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    border-radius: 0 200px 0 200px;
+  }
+  50% {
+    border-radius: 200px 0 200px 0;
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    border-radius: 0 200px 0 200px;
+  }
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boton {
+  font-size: 1.3em;
+  padding: 10px;
+  /* transform: translate(0, 100px); */ /* tambien es posible usar translate*/
+  margin-top: 100px;
+  border-radius: 10px;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  animation-name: boton;
+  animation-duration: 2s;
+}
+@keyframes boton {
+  0% {
+    transform: translateY(1000px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

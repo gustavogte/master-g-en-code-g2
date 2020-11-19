@@ -1,0 +1,16 @@
+.container {
+  padding-top: 100px;
+}
+.social-icon {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+.resume-section {
+  margin-top: 100px;
+}
+.cartoon {
+  display: flex;
+  height: 200px;
+  width: 200px;
+}

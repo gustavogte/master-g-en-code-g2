@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.navbar {
+  height: 80px;
+  background-color: salmon;
+}
+main {
+  background: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/beach-zoom-virtual-background-video-design-template-0dc8d8ff1dfc705b84f910b558e397a3.jpg?ts=1586775331)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+.logo {
+  height: 100px;
+  background-color: blue;
+}
+.search {
+  height: 50px;
+  background-color: red;
+}
+
+.links {
+  height: 100px;
+  background-color: skyblue;
+}
+.links-first-row {
+  background-color: steelblue;
+  height: 50%;
+  width: 330px;
+  margin: 0 auto;
+}
+.logito {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 24%;
+  background-color: violet;
+  display: inline-block;
+}
+.loguito-imagen {
+  height: 65%;
+  background-color: aqua;
+}
+.loguito-texto {
+  height: 33%;
+  background-color: white;
+}

@@ -1,0 +1,14 @@
+/* Todas las etiquetas presentes */
+
+* {
+  font-family: arial;
+}
+
+.descripcion {
+  display: block;
+  margin-bottom: 10px;
+}
+.entrada {
+  display: block;
+  margin-bottom: 10px;
+}

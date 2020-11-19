@@ -1,0 +1,27 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  width: 95%;
+}
+ul {
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: space;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: aqua;
+}
+li {
+  justify-content: space-between;
+}
+.main-container {
+  width: 95%;
+  height: 500px;
+  background-color: greenyellow;
+  flex-direction: column;
+  display: flex;
+}

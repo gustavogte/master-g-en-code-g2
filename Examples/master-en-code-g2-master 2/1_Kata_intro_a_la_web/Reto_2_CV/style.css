@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  /* background-color: aquamarine; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.leftcontainer {
+  /* background-image: url(../img/Office.jpg); */
+  background-color: gray;
+  height: 100%;
+  width: 587px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(black, white);
+}
+img {
+  height: 200px;
+  width: 180px;
+}
+.h2container {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  font-size: xx-small;
+}
+.h1container {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: xx-small;
+  justify-content: flex-start;
+}
+/* .experiment {
+  background: linear-gradient(black, white);
+  background-image: url(../img/Books.jpg);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  width: 40%;
+  height: 100%;
+} */
+.rightcontainer {
+  background: linear-gradient(white, black);
+
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  color: black;
+  display: flex;
+  font-size: small;
+  /* align-items: center; */
+  /* background-color: blue; */
+  flex-direction: column;
+}
+h4 {
+  margin-bottom: 0px;
+}
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.skill-container {
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: x-small;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* background-color: white; */
+}
+.skills {
+  height: 100%;
+  width: 50%;
+  /* background-color: purple; */
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hobbies {
+  height: 100%;
+  width: 50%;
+  /* background-color: black; */
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.experience-section {
+  margin-top: 40px;
+  margin-left: 20px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Este sitio es un ejemplo de como utilizar correctamente HTML"
+      name="descripcion"
+    />
+    <meta
+      content="DEV.F, Master en coding, HTML, input, ARIA"
+      name="keywords"
+    />
+    <meta content="../img/tiktok.png" name="image" />
+    <meta content="es-MX" http-equiv="Content-Language" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>HTML inputs</title>
+  </head>
+  <body>
+    <form aria-label="pequeno formulario demostrativo de distintos inputs">
+      <label class="descripcion" for="Nombre">Ingresa tu nombre</label>
+      <input
+        aria-label="Ingresa tu nombre"
+        class="entrada"
+        type="text"
+        name="Nombre"
+        required
+        placeholder="Juanito Hidalgo"
+      />
+      <label class="descripcion" for="Numero">Dame un numero</label>
+      <input
+        aria-invalid="true"
+        class="entrada"
+        type="number"
+        name="Numero"
+        max="10"
+        min="0"
+        placeholder="0-10"
+      />
+      <label class="descripcion" for="Telefono">Dame tu telefono</label>
+      <input
+        class="entrada"
+        type="tel"
+        name="Telefono"
+        autocomplete="off"
+        placeholder="Tu numero de telefono"
+      />
+      <label class="descripcion" for="Email">Dame tu correo</label>
+      <input class="entrada" type="email" name="Email" />
+      <label class="descripcion" for="Calendario">Calendario</label>
+      <input class="entrada" type="date" name="Calendario" />
+      <label class="descripcion" for="Rango">Rango</label>
+      <input class="entrada" type="range" name="Rango" max="10" min="0" />
+      <label class="descripcion" for="Color">Dame un color</label>
+      <input class="entrada" type="color" name="Color" />
+      <label for="Azul">Azul</label>
+      <input type="checkbox" name="Azul" />
+      <label for="Azul">Verde</label>
+      <input type="checkbox" name="Azul" />
+      <label for="Azul">Amarillo</label>
+      <input type="checkbox" name="Azul" />
+      <label class="descripcion" for="Mazda">Mazda</label>
+      <input class="entrada" type="radio" name="Autos" />
+      <label class="descripcion" for="Azul">Volvo</label>
+      <input class="entrada" type="radio" name="Autos" />
+      <label class="descripcion" for="Azul">Volkswagen</label>
+      <input class="entrada" type="radio" name="Autos" />
+      <label class="descripcion" for="">Coloca una historia</label>
+      <textarea
+        name="inut"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Escribe tu historia"
+      ></textarea>
+      <br />
+      <input type="submit" value="Send to an imaginary BD" />
+    </form>
+  </body>
+</html>

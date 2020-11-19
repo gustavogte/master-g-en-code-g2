@@ -1,0 +1,20 @@
+html {
+  background-color: gray;
+  display: block;
+  margin-left: 200px;
+  align-items: center;
+}
+img {
+  margin-left: 280px;
+}
+a {
+  margin-left: 406px;
+}
+h1 {
+  display: block;
+  align-items: center;
+  justify-items: center;
+}
+.portada {
+  margin-left: 350px;
+}

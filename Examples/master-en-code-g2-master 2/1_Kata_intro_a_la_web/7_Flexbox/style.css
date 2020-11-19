@@ -1,0 +1,30 @@
+.contenedor {
+  height: 100vh;
+  width: 800px;
+  background-color: purple;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* display flex, nos permite acceder a este display  */
+/* flex-direction, permite modificar la direccion de los elementos del contenedor o padre */
+/* flex-wrap: wrap respeta el ancho y las medidas del elemento hijo, no wrap lo cambia para ajustar al elemento  */
+/* justify-content: permite ordenar los elementos y su distribucion  */
+
+/* Las caracteristicas deben estar en el contendor padre  */
+
+.hijo {
+  height: 150px;
+  width: 150px;
+  background-color: orange;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,21 @@
+.caja {
+  width: 90px;
+  height: 90px;
+  background-color: thistle;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.derecha {
+  float: right;
+  background-color: tomato;
+}
+.izquierda {
+  float: left;
+  background-color: violet;
+}
+
+.parrafo {
+  width: 100px;
+  clear: both;
+}

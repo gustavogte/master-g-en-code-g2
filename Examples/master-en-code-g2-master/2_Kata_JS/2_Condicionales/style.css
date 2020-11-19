@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+}
+li {
+  list-style-type: none;
+  display: flex;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  color: white;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}

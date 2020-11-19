@@ -1,0 +1,83 @@
+html {
+  background-image: image url(img/triangles-1430105_1280.png);
+}
+body {
+  color: white;
+}
+.navBar {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+ul {
+  display: flex;
+}
+li {
+  margin-right: 20px;
+  display: flex;
+}
+.googleLink {
+  color: white;
+  margin-top: 10px !important;
+}
+.imagesLink {
+  color: white;
+  margin-top: 10px;
+}
+.icon1 {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.comic {
+  margin-left: 5px;
+  max-width: 50px;
+  max-height: 50px;
+}
+.googleMain {
+  margin-top: -50px;
+  margin-left: 42%;
+}
+.googleTitle {
+  margin-right: 100px;
+  padding-left: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
+  color: white;
+}
+.icon2 {
+  margin-left: 3px;
+  max-width: 15px;
+  max-height: 15px;
+}
+
+.centeredIcons {
+  display: flex;
+  justify-items: center;
+  margin-left: 535px;
+}
+
+.iconNetflix {
+  margin-top: 5px;
+  padding: 10px;
+  max-width: 50px;
+  max-height: 50px;
+  color: white;
+}
+.iconNames {
+  color: white;
+  padding-left: 15px;
+}
+
+footer {
+  margin-top: 80px;
+  color: white;
+}
+.googleImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 420px;
+}

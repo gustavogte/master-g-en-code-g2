@@ -1,0 +1,26 @@
+/* TODAS las etiquetas */
+* {
+  font-family: Arial;
+}
+
+/* Selector por etiqueta */
+h1 {
+  font-family: Arial;
+  color: blue;
+  /* background-color: aqua; */
+}
+
+/* Selectores por id */
+#principal {
+  display: none;
+  color: orange;
+  border: 1px solid green;
+}
+
+/* Selectores por clase tiene preferencia sobre las etiquetas */
+
+.rojo {
+  display: inline;
+  color: red;
+  font-family: sans-serif;
+}
